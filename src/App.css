@@ -58,7 +58,30 @@ img{
   width: 70%;
 }
 
-/* Column Size for thead */
 
+tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+/* Column Size for thead */
+table {
+  width: 100%;
+}
+
+th {
+  width: 10%;
+}
+
+thead tr th:nth-child(4),
+thead tr th:nth-child(5) {
+  width: 30%;
+}
 
 /* Column size for tbody */
+tbody tr td {
+  width: 10%;
+}
+tbody tr td:nth-child(4),
+tbody tr td:nth-child(5) {
+  width: 30%;
+} 

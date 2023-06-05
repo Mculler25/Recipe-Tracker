@@ -33,9 +33,15 @@ function RecipeCreate({addRecipeHandler}) {
       <table>
         <tbody>
           <tr>
-            <td><input type="text" name="name" placeholder="Name" onChange={handleChange} value={formData.name}/></td>
-            <td><input type="text" name="cuisine" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine}/></td>
-            <td><input type="url" name="photo" placeholder="Photo" onChange={handleChange} value={formData.photo}/></td>
+            <td className="recipe-form">
+              <input type="text" name="name" placeholder="Name" onChange={handleChange} value={formData.name}/>
+            </td >
+            <td className="recipe-form">
+              <input type="text" name="cuisine" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine}/>
+            </td>
+            <td className="recipe-form">
+              <input type="url" name="photo" placeholder="Photo" onChange={handleChange} value={formData.photo}/>
+            </td>
             <td> <textarea 
              name="ingredients" 
              placeholder="Ingredients" 
